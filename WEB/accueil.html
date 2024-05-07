@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .div {
+            box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 14px 0;
+        }
+        
+        .div-2 {
+            background-color: var(--Shade-Background, #f9f9f9);
+            display: flex;
+            gap: 20px;
+            padding: 0 80px 36px;
+        }
+        
+        @media (max-width: 991px) {
+            .div-2 {
+                flex-wrap: wrap;
+                padding: 0 20px;
+            }
+        }
+        
+        .img {
+            aspect-ratio: 1.92;
+            object-fit: auto;
+            object-position: center;
+            width: 42px;
+            fill: var(--Neutral-Medium, #999);
+            margin: auto 0;
+        }
+        
+        .div-3 {
+            display: flex;
+            margin-top: -14px;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 0;
+            width: fit-content;
+        }
+        
+        @media (max-width: 991px) {
+            .div-3 {
+                max-width: 100%;
+            }
+        }
+        
+        .div-4 {
+            align-items: center;
+            display: flex;
+            color: var(--Neutral-Dark, #111);
+            justify-content: center;
+            padding: 24px 60px;
+        }
+        
+        @media (max-width: 991px) {
+            .div-4 {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+        }
+        
+        .div-5 {
+            display: flex;
+            width: 805px;
+            max-width: 100%;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        
+        @media (max-width: 991px) {
+            .div-5 {
+                flex-wrap: wrap;
+            }
+        }
+        
+        .div-6 {
+            font: 600 36px Jost, sans-serif;
+        }
+        
+        .div-7 {
+            display: flex;
+            gap: 20px;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 141%;
+            margin: auto 0;
+            padding: 4px 0;
+        }
+        
+        @media (max-width: 991px) {
+            .div-7 {
+                flex-wrap: wrap;
+            }
+        }
+        
+        .div-8 {
+            font-family: Jost, sans-serif;
+        }
+        
+        .div-9 {
+            font-family: Jost, sans-serif;
+        }
+        
+        .div-10 {
+            font-family: Jost, sans-serif;
+            margin: auto 0;
+        }
+        
+        .div-11 {
+            font-family: Jost, sans-serif;
+            flex-grow: 1;
+            flex-basis: auto;
+        }
+        
+        .div-12 {
+            display: flex;
+            margin-top: 85px;
+            padding-left: 68px;
+            flex-direction: column;
+        }
+        
+        @media (max-width: 991px) {
+            .div-12 {
+                max-width: 100%;
+                padding-left: 20px;
+                margin-top: 40px;
+            }
+        }
+        
+        .div-13 {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+        
+        @media (max-width: 991px) {
+            .div-13 {
+                max-width: 100%;
+                flex-wrap: wrap;
+            }
+        }
+        
+        .div-14 {
+            flex-grow: 1;
+            flex-basis: auto;
+        }
+        
+        @media (max-width: 991px) {
+            .div-14 {
+                max-width: 100%;
+            }
+        }
+        
+        .div-15 {
+            gap: 20px;
+            display: flex;
+        }
+        
+        @media (max-width: 991px) {
+            .div-15 {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0px;
+            }
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 41%;
+            margin-left: 0px;
+        }
+        
+        @media (max-width: 991px) {
+            .column {
+                width: 100%;
+            }
+        }
+        
+        .div-16 {
+            display: flex;
+            margin-top: 52px;
+            flex-grow: 1;
+            flex-direction: column;
+            color: var(--Neutral-Dark, #111);
+        }
+        
+        @media (max-width: 991px) {
+            .div-16 {
+                margin-top: 40px;
+            }
+        }
+        
+        .div-17 {
+            text-align: center;
+            font: 500 17px/141% Jost, sans-serif;
+        }
+        
+        .div-18 {
+            letter-spacing: -2.24px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            font: 400 56px/64px Archivo Black, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+        
+        @media (max-width: 991px) {
+            .div-18 {
+                font-size: 40px;
+                line-height: 51px;
+            }
+        }
+        
+        .column-2 {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 59%;
+            margin-left: 20px;
+        }
+        
+        @media (max-width: 991px) {
+            .column-2 {
+                width: 100%;
+            }
+        }
+        
+        .div-19 {
+            -webkit-text-stroke-width: 1;
+            -webkit-text-stroke-color: var(--Neutral-Dark, #111);
+            letter-spacing: -8.25px;
+            text-transform: uppercase;
+            border-color: rgba(17, 17, 17, 1);
+            border-style: solid;
+            border-width: 1px;
+            font: 400 150px/120px Archivo Black, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+        
+        @media (max-width: 991px) {
+            .div-19 {
+                max-width: 100%;
+                margin-top: 40px;
+                font-size: 40px;
+                line-height: 36px;
+            }
+        }
+        
+        .img-2 {
+            aspect-ratio: 1.92;
+            object-fit: auto;
+            object-position: center;
+            width: 42px;
+            fill: var(--Icon-Drak, #111);
+            align-self: end;
+            margin-top: 214px;
+        }
+        
+        @media (max-width: 991px) {
+            .img-2 {
+                margin-top: 40px;
+            }
+        }
+        
+        .div-20 {
+            justify-content: center;
+            border-radius: 4px;
+            border-color: rgba(17, 17, 17, 1);
+            border-style: solid;
+            border-width: 1px;
+            align-self: start;
+            margin-top: 45px;
+            color: var(--Primary-Dark, #111);
+            padding: 12px 32px;
+            font: 500 16px/150% Jost, sans-serif;
+        }
+        
+        @media (max-width: 991px) {
+            .div-20 {
+                margin-top: 40px;
+                padding: 0 20px;
+            }
+        }
+        
+        .div-21 {
+            border-radius: 50%;
+            background: linear-gradient(90deg, #111 1.55%, rgba(17, 17, 17, 0) 118.57%);
+            filter: blur(2px);
+            align-self: end;
+            width: 619px;
+            max-width: 100%;
+            height: 27px;
+            margin: 115px 98px 0 0;
+        }
+        
+        @media (max-width: 991px) {
+            .div-21 {
+                margin: 40px 10px 0 0;
+            }
+        }
+        
+        .div-22 {
+            border-radius: 50%;
+            border-color: rgba(17, 17, 17, 1);
+            border-style: solid;
+            border-width: 1px;
+            align-self: center;
+            margin-top: 68px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        @media (max-width: 991px) {
+            .div-22 {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="div-2">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f8250f025c5955f1d74d133238b23ff9aac0a7342af6f87cee53b912061816a?" class="img" />
+            <div class="div-3">
+                <div class="div-4">
+                    <div class="div-5">
+                        <div class="div-6">
+                            <span style="color: rgba(34, 170, 0, 1)">S</span>
+                            <span style="color: rgba(241, 245, 42, 1)">n</span>
+                            <span style="color: rgba(250, 18, 18, 1)">.</span> eaker
+                        </div>
+                        <div class="div-7">
+                            <div class="div-8"><a>Accueil</a></div>
+                            <div class="div-9"><a>Produits</a></div>
+                            <div class="div-10"><a>Panier</a></div>
+                            <div class="div-11"><a>A Propos</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-12">
+                    <div class="div-13">
+                        <div class="div-14">
+                            <div class="div-15">
+                                <div class="column">
+                                    <div class="div-16">
+                                        <div class="div-17">Collection Sneakers</div>
+                                        <div class="div-18">
+                                            Nouvelle
+                                            <br /> Collection
+                                            <br /> Nike
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column-2">
+                                    <div class="div-19">
+                                        NYKEN
+                                        <br /> AIR
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf6a1a46b000a8786bd672c4abd0afa05cf8555963c9916c97e777023d9a8526?" class="img-2" />
+                    </div>
+                    <div class="div-20">Voir Plus</div>
+                    <div class="div-21"></div>
+                    <div class="div-22"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
